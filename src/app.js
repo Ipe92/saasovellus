@@ -3,7 +3,6 @@ const express = require("express");
 const forecast = require("./forecast");
 
 const app = express();
-const port = 3000;
 
 const publicDirectory = path.join(__dirname, "../public");
 app.use(express.static(publicDirectory));
@@ -24,4 +23,4 @@ app.get("/weather", (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`App is listening at http://localhost:${port}`));
+app.listen(process.env.PORT);
