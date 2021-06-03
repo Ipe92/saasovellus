@@ -1,6 +1,6 @@
-const weatherForm = document.getElementById("#formid");
-const search = document.getElementById("#inputid");
-const message = document.getElementById("#messageid");
+const weatherForm = document.querySelector("form");
+const search = document.querySelector("input");
+const message = document.querySelector("#message");
 
 console.log("weatherForm", weatherForm);
 console.log("search", search);
