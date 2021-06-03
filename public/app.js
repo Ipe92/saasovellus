@@ -1,6 +1,10 @@
-const weatherForm = document.querySelector("form");
-const search = document.querySelector("input");
-const message = document.querySelector("#message");
+const weatherForm = document.getElementById("#formid");
+const search = document.getElementById("#inputid");
+const message = document.getElementById("#messageid");
+
+console.log("weatherForm", weatherForm);
+console.log("search", search);
+console.log("message", message);
 
 weatherForm.addEventListener("submit", (e) => {
     e.preventDefault();
