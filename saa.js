@@ -15,7 +15,7 @@ request({ url: url, json: true }, (error, response, body) => {
         console.log(
             "Ulkona on " +
                 body.current.temperature +
-                "astetta lämmintä, tuntuu kuin " +
+                " astetta lämmintä, tuntuu kuin " +
                 body.current.feelslike +
                 " asteelta.",
         );
